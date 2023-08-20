@@ -41,6 +41,22 @@ sum_minimizer = zfit.minimize.Minuit()
 sum_minimum = sum_minimizer.minimize(loss=sum_nll)
 print(sum_minimum)
 
+# FitResult of
+# <UnbinnedNLL model=[<zfit.<class 'zfit.models.basic.Exponential'>  params=[sum_lam, sum_lam]] data=[<zfit.core.data.Data object at 0x7f218c61f160>] constraints=[]> 
+# with
+# <Minuit Minuit tol=0.001>
+
+# ╒═════════╤═════════════╤══════════════════╤═════════╤═════════════╕
+# │ valid   │ converged   │ param at limit   │ edm     │ min value   │
+# ╞═════════╪═════════════╪══════════════════╪═════════╪═════════════╡
+# │ True    │ True        │ False            │ 2.7e-12 │ 10000       │
+# ╘═════════╧═════════════╧══════════════════╧═════════╧═════════════╛
+
+# Parameters
+# name       value  (rounded)    at limit
+# -------  ------------------  ----------
+# sum_lam         -0.00487487       False
+
 bins = np.linspace(50, 220, 18)
 hist_frequencies = np.array(qcd_bin_sum_vals)
 bin_edges = bins
@@ -73,7 +89,7 @@ sum_exp_pdf = zfit.pdf.SumPDF(pdfs=[exp_srbin1, exp_srbin2, exp_srbin3], fracs=[
 
 vals_sum_nll = zfit.loss.UnbinnedNLL(model=sum_exp_pdf, data=qcd_bin_sum_vals)
 sum_minimizer = zfit.minimize.Minuit()
-sum_minimum = sum_minimizer.minimize(loss=sum_nll)
+sum_minimum = sum_minimizer.minimize(loss=vals_sum_nll)
 print(sum_minimum)
 
 bins = np.linspace(50, 220, 18)
