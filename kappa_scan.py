@@ -1,6 +1,6 @@
 kl_dict = {}
 
-with open("rws_data.txt") as file:
+with open("other_workspace_elements.txt") as file:
     for text in file:
         kappa_pattern = r'AsymPow::systeff_SRBin3_ggHH_kl_(\d+)_kt_(\d+)_.*?bin(\d+)\[ kappaLow=(\d+\.\d+) kappaHigh=(\d+\.\d+).*?'
         kappa_match = re.search(kappa_pattern, text)
