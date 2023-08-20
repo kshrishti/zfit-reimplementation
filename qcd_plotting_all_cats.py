@@ -6,7 +6,7 @@ qcd_densities_SRBin2 = []
 qcd_vals_SRBin3 = []
 qcd_densities_SRBin3 = []
 
-with open ("qcd_datadriven.txt") as file:
+with open ("other_workspace_elements.txt") as file:
   density_match = None
   for text in file:
     density_pattern = r'RooFormulaVar::SRBin(\d+)_bbbb_boosted_ggf_qcd_datadriven_bin(\d+)_density.*?formula="(.*?)"\s*] = (\d+\.+\d+)'
