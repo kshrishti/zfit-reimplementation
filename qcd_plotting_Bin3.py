@@ -50,3 +50,19 @@ plt.plot(bin_centers, np.array(qcd_bin_vals).shape[0] / 17 * (220 - 50) * pdf, c
 plt.legend()
 plt.show()
 
+
+# FitResult of
+# <UnbinnedNLL model=[<zfit.<class 'zfit.models.basic.Exponential'>  params=[Lambda, Lambda]] data=[<zfit.core.data.Data object at 0x7a1e14060430>] constraints=[]> 
+# with
+# <Minuit Minuit tol=0.001>
+
+# ╒═════════╤═════════════╤══════════════════╤═════════╤═════════════╕
+# │ valid   │ converged   │ param at limit   │ edm     │ min value   │
+# ╞═════════╪═════════════╪══════════════════╪═════════╪═════════════╡
+# │ True    │ True        │ False            │ 2.6e-06 │ 9962.727    │
+# ╘═════════╧═════════════╧══════════════════╧═════════╧═════════════╛
+
+# Parameters
+# name      value  (rounded)    at limit
+# ------  ------------------  ----------
+# Lambda          -0.0214455       False
