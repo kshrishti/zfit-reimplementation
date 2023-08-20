@@ -46,4 +46,5 @@ print(f'execution time: {end - start}')
 #   41.24024567  34.91807567  29.56510051  25.03274168  21.1951979
 #   17.94595333  15.19482113  12.86544019  10.89315562   9.22322421
 #    7.80929492   6.61212237]
-# execution time: 0.21702146308962256
+# Fontconfig warning: ignoring UTF-8: not a valid region tag
+# execution time: 0.22956785303540528
