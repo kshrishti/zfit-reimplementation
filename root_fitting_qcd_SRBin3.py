@@ -10,11 +10,13 @@ y_axis = np.array([91.9896, 77.4989, 67.9044, 58.9696, 52.7691, 46.4393, 39.324,
 
 graph = ROOT.TGraph(len(x_axis), x_axis, y_axis)
 
+# Create the exponential fit and set the initial guesses
 exponential_fit = ROOT.TF1("exponential_fit", "[0] * exp([1] * x)", x_axis[0], x_axis[-1])
-exponential_fit.SetParameters(100, -0.03)  # Set initial parameter guesses
+exponential_fit.SetParameters(100, -0.03)  
 
 graph.Fit("exponential_fit", "R")  # "R" for range fit within x-axis range
 
+# Get the values of the parameters and y-values after they have been fitted
 parameters = [exponential_fit.GetParameter(i) for i in range(2)]
 print("Fit parameters:", parameters)
 
@@ -26,6 +28,7 @@ graph.Draw("AP")  # "AP" for points and connecting lines
 exponential_fit.Draw("same")
 canvas.Draw()
 
+# Measure execution time
 end = timer()
 print(f'execution time: {end - start}')
 
