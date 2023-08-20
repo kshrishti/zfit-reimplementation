@@ -13,4 +13,7 @@ DiHiggs analysis reimplementation in zfit.
 
 `SampleDataExtraction.C` has example commands that print out the contents of the RooWorkspace.
 
-There are also screenshots of all the results plotted. 
+Figures plotted:
+-   Higgs_SMBR: Branching ratios of Higgs decay channels
+-   kl_5_kt_1, kl_0_kt_1, kl_1_kt_1: High and low Yukawa coupling constant estimations given different constant Higgs self-coupling constant.
+-   QCD_SRBin3_fit: Exponential fitting of QCD background data in the category SRBin3. 
