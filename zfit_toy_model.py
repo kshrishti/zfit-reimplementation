@@ -14,9 +14,11 @@ for run in range(nruns):
 
 
 # If the parameters are constrained, such as the nuisance parameters that we have in the full model, we would deal with it as follows (with example values for the observation and uncertainty)
-
-observation = 0.022
-uncertainty = 0.001
+# These values come from out.txt:
+  # SimpleGaussianConstraint::SRBin3_bbbb_boosted_ggf_others_mcstat_bin16_Pdf "SRBin3_bbbb_boosted_ggf_others_mcstat_bin16_Pdf"
+  # RooRealVar::SRBin3_bbbb_boosted_ggf_others_mcstat_bin16 = 0 +/- 1  L(-4 - 4) 
+observation = 0
+uncertainty = 1
 
 constraint = zfit.constraint.GaussianConstraing(params=[lam], observation=observation, uncertainty=uncertainty)
 
