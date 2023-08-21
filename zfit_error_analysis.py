@@ -76,6 +76,7 @@ print(f"Approx hessian (can invert): {minimum2.approx.hessian(invert=True)}")  #
 # Approx inverse hessian: [[0.0007269]]
 # Approx hessian (can invert): [[1375.70332147]]
 
+# For some reason all the zfit-specific methods aren't running
 # with zfit.run.set_autograd_mode(True):
 #     hesse4 = minimum2.hesse(name="h_autograd", method="hesse_np")
 # print(minimum2)
