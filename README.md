@@ -13,6 +13,8 @@ DiHiggs analysis reimplementation in zfit.
 
 `SampleDataExtraction.C` has example commands that print out the contents of the RooWorkspace.
 
+`zfit_toy_model.py` details an extension which can be used when the PDFs are known but the data itself isn't, thereby using samples to generate data and minimise the loss of fitting. 
+
 Figures plotted:
 -   `Higgs_SMBR`: Branching ratios of Higgs decay channels
 -   `kl_5_kt_1`, `kl_0_kt_1`, `kl_1_kt_1`: High and low Yukawa coupling constant estimations given different constant Higgs self-coupling constant.
