@@ -13,6 +13,9 @@ DiHiggs analysis reimplementation in zfit.
 `root_fitting_qcd_SRBin3.py` runs a ROOT exponential model fitting of the QCD background in the category SRBin3. 
 `qcd_SRBin3_zfit_v_ROOT.py` compares the fitting of zfit and ROOT for the QCD model in SRBin3. 
 
+`zfit_error_analysis.py` employs some methods of error analysis to get some more data about the fitting. 
+`root_error_analysis.py` extracts the parameter errors from the ROOT fit. 
+
 `qcd_plotting_all_cats.py` runs a fitting for the QCD background in all categories.
 
 `PrintSummary.C` prints a summary of the RooWorkspace contents by printing the number of events in each category.  
