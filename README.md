@@ -25,6 +25,11 @@ DiHiggs analysis reimplementation in zfit.
 
 `zfit_unbinned_fit.py` does the same thing as `zfit_qcd_SRBin3.py`, but instead of using a numpy array converted to a tensor, it uses an unbinned Data object, which appears to make a worse fit and takes more time to execute. 
 
+`run_to_ws.sh` has the Combine command that outputs the singal modifier value. 
+
+`HHModel_model_all.root` is the ROOT file that we parsed/extracted the data from, and its information is stored in the datacard `HHModel_model_all.txt`.
+
+
 Figures plotted:
 -   `Higgs_SMBR`: Branching ratios of Higgs decay channels
 -   `kl_5_kt_1`, `kl_0_kt_1`, `kl_1_kt_1`: High and low Yukawa coupling constant estimations given different constant Higgs self-coupling constant.
